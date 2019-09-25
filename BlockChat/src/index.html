@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Social Net | Welcome</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top"onload="App.readUser(); return false;">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="message.html" style="padding-top: 0px;">Message Center</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="user.html" style="padding-top: 0px;">Update Profile</a>
+          </li>
+          <li class="nav-item">
+            <form onsubmit="App.logout();return false;">
+              <button class="btn btn-outline-danger">Logout</button>
+            </form>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+
+
+
+
+  <!-- Footer -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+    <h2 class="text-center">Welcome to Social Net</h2>
+    <div class="card">
+      <h3 class="card-header">User Profile</h3>
+      <label id="user">User Name:</label>
+      <label id="name">Name:</label>
+      <label id="phone">Phone:</label>
+      <label id="gender">Gender:</label>
+      <label id="email">Email:</label>
+    </div>
+
+    <p id="accountAddress"></p>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.3.1/sha512.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Social Net | Update User Profile</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+    <!-- content -->
+
+<body onload="App.readUser(); return false;">
+    <div class="card col-md-4" style="margin: 10px;padding: 10px;">
+      <h3 class="card-header"><img id="img" style="width: 90px;height: 90px;">&nbsp;Current User Profile</h3>
+      <label id="user">User Name:</label><br>
+      <label id="name">Name:</label><br>
+      <label id="phone">Phone:</label><br>
+      <label id="gender">Gender:</label><br>
+      <label id="email">Email:</label>
+    </div>
+
+    <div class="card col-md-4" style="margin: 10px;padding: 10px;">
+        <h3 class="card-header">New User Profile</h3>
+        <form class="form" onsubmit="App.updateUser();return false;">
+        <input id="uname" type="text" class="form-control" placeholder="New username" style="margin-bottom: 10px;">
+        <input id="pass" type="password" class="form-control" placeholder="New password" style="margin-bottom: 10px;">
+        <input id="cpass" type="password" class="form-control" placeholder="Confirm password" style="margin-bottom: 10px;">
+        <input id="name" type="text" class="form-control" placeholder="Name" style="margin-bottom: 10px;">
+        <input id="phone" type="number" class="form control" placeholder="Phone number" style="margin-bottom: 10px;">
+        <fieldset id="gender">
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        </fieldset>
+        <br>
+        <input type="email" class="form-control" placeholder="New Email" style="margin-bottom: 10px;">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.3.1/sha512.js"></script>
+   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Social Net | Login</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center bg">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/blackbox-243206.appspot.com/o/img.png?alt=media&token=d3548eea-511f-420e-8276-29dc84667134");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form{
+    border-style:solid;
+    border-radius: 15px;
+    border-color:dimgray;
+
+}
+</style>  <form class="form-signin" onsubmit="App.loginUser(); return false;">
+  <h1 class="h3 mb-3 font-weight-normal">BlackBox</h1>
+  <input type="text" id="user" class="form-control" placeholder="Username" required autofocus>
+  <label for="loginPassword" class="sr-only">Password</label>
+  <input type="password" id="loginPassword" class="form-control" placeholder="Password" required style="margin-top: 10px;">
+  <button class="btn btn-lg btn-secondary btn-block" type="submit">Log in</button><br>
+  <a href="signup.html">Create Account Now</a>
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.3.1/sha512.js"></script>
+
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
